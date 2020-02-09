@@ -84,52 +84,6 @@ function tabsNew(links, tabs) {
 
 // ***************************** СЕКУНДОМЕР *********************************
 
-// const sec_sw = document.querySelector('.stopwatch__seconds'),
-//       min_sw = document.querySelector('.stopwatch__minutes'),
-//       hour_sw = document.querySelector('.stopwatch__hours'),
-//       btn_sw = document.querySelector('.stopwatch__btn'),
-//       span_sw = document.querySelector('.tabsLink__span');
-
-// btn_sw.addEventListener('click', function() {
-//     if(this.innerHTML == 'start') {
-//         this.innerHTML = 'stop';
-//         span_sw.classList.add('active');
-//         let i = 0;
-//         setTimeout(() => stopwatch(this, i), 1000);
-//     }else if(this.innerHTML == 'stop') {
-//         this.innerHTML = 'clear';
-//         span_sw.classList.remove('active');
-//         span_sw.classList.add('active_clear');
-//     }else {
-//         span_sw.classList.remove('active_clear');
-//         sec_sw.innerHTML = 0;
-//         min_sw.innerHTML = 0;
-//         hour_sw.innerHTML = 0;
-//         this.innerHTML = 'start';
-//     }
-// })
-
-// function stopwatch(el, i) {
-//     if(el.innerHTML == 'stop') {
-//         if(i == 60) {
-//             i = 0;
-//             sec_sw.innerHTML = i;
-//             if(min_sw.innerHTML == 59) {
-//                 min_sw.innerHTML = 0;
-//                 hour_sw.innerHTML++;
-//             }else {
-//                 min_sw.innerHTML++;
-//             }
-//         }else {
-//             i++;
-//             sec_sw.innerHTML = i;
-//         }
-//         setTimeout(() => stopwatch(el, i), 1000);
-//     }
-// }
-
-
-
 
 const sec_sw = document.querySelector('.stopwatch__seconds'),
       millisec_sw = document.querySelector('.stopwatch__milliseconds'),
@@ -180,24 +134,4 @@ function stopwatch(el, i) {
         }
         setTimeout(() => stopwatch(el, i), );
     }
-
-
-
-
-    // if(el.innerHTML == 'stop') {
-    //     if(i == 60) {
-    //         i = 0;
-    //         sec_sw.innerHTML = i;
-    //         if(min_sw.innerHTML == 59) {
-    //             min_sw.innerHTML = 0;
-    //             hour_sw.innerHTML++;
-    //         }else {
-    //             min_sw.innerHTML++;
-    //         }
-    //     }else {
-    //         i++;
-    //         sec_sw.innerHTML = i;
-    //     }
-    //     setTimeout(() => stopwatch(el, i), 1000);
-    // }
 }
